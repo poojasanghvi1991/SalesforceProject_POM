@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-24T22:01:39 PDT" name="SalesforceProject" finished-at="2022-05-24T22:03:07 PDT" duration-ms="88038">
+    <groups>
+    </groups>
+    <test started-at="2022-05-24T22:01:39 PDT" name="LoginTestOnEdge" finished-at="2022-05-24T22:03:07 PDT" duration-ms="88038">
+      <class name="com.salesforce.tests.login.LoginTestScripts">
+        <test-method is-config="true" signature="initialTestSetup()[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:01:40 PDT" name="initialTestSetup" finished-at="2022-05-24T22:01:40 PDT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialTestSetup -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:01:40 PDT" name="setUp" finished-at="2022-05-24T22:01:46 PDT" duration-ms="6071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC01_testnoPasswordError()[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:01:46 PDT" name="TC01_testnoPasswordError" finished-at="2022-05-24T22:01:48 PDT" duration-ms="2191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_testnoPasswordError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:01:48 PDT" name="tearDown" finished-at="2022-05-24T22:01:53 PDT" duration-ms="5345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:01:53 PDT" name="setUp" finished-at="2022-05-24T22:01:56 PDT" duration-ms="3086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC02_validLogin()[pri:1, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:01:56 PDT" name="TC02_validLogin" finished-at="2022-05-24T22:02:04 PDT" duration-ms="7893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_validLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:04 PDT" name="tearDown" finished-at="2022-05-24T22:02:09 PDT" duration-ms="5331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:09 PDT" name="setUp" finished-at="2022-05-24T22:02:13 PDT" duration-ms="3170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC03_checkRememberMe()[pri:2, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:13 PDT" name="TC03_checkRememberMe" finished-at="2022-05-24T22:02:23 PDT" duration-ms="10550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_checkRememberMe -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:23 PDT" name="tearDown" finished-at="2022-05-24T22:02:29 PDT" duration-ms="5382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:29 PDT" name="setUp" finished-at="2022-05-24T22:02:32 PDT" duration-ms="3226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC04A_forgotPasswordLink()[pri:3, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:32 PDT" name="TC04A_forgotPasswordLink" finished-at="2022-05-24T22:02:34 PDT" duration-ms="1908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04A_forgotPasswordLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:34 PDT" name="tearDown" finished-at="2022-05-24T22:02:39 PDT" duration-ms="5273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:39 PDT" name="setUp" finished-at="2022-05-24T22:02:43 PDT" duration-ms="4434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC04B_loginFailedError()[pri:4, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:43 PDT" name="TC04B_loginFailedError" finished-at="2022-05-24T22:02:45 PDT" duration-ms="1827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04B_loginFailedError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:45 PDT" name="tearDown" finished-at="2022-05-24T22:02:51 PDT" duration-ms="5340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:51 PDT" name="setUp" finished-at="2022-05-24T22:02:54 PDT" duration-ms="3172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC05_validateUserMenuDropdown()[pri:5, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:02:54 PDT" name="TC05_validateUserMenuDropdown" finished-at="2022-05-24T22:03:02 PDT" duration-ms="8238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_validateUserMenuDropdown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:03:02 PDT" name="tearDown" finished-at="2022-05-24T22:03:07 PDT" duration-ms="5327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="finalTearDown()[pri:0, instance:com.salesforce.tests.login.LoginTestScripts@6e171cd7]" started-at="2022-05-24T22:03:07 PDT" name="finalTearDown" finished-at="2022-05-24T22:03:07 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalTearDown -->
+      </class> <!-- com.salesforce.tests.login.LoginTestScripts -->
+    </test> <!-- LoginTestOnEdge -->
+  </suite> <!-- SalesforceProject -->
+</testng-results>
