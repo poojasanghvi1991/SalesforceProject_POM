@@ -65,7 +65,7 @@
 					to run via the testNg xml and not directly through the pom.xml, uncomment the below lines
 					and remove the runner.java lines. In testNG include the runner class under tests/classes-->
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>testLoginPage.xml</suiteXmlFile>
 					</suiteXmlFiles> 
 					<!-- this is to run the runner file directly from pom.xml without going to testNG.xml
 					<testFailureIgnore>true</testFailureIgnore>
