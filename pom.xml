@@ -4,6 +4,11 @@
   <artifactId>AutomateSalesforceWebApp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+<properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<maven.compiler.source>11</maven.compiler.source>
+	<maven.compiler.target>11</maven.compiler.target>
+</properties>
 
 <dependencies>
 
@@ -45,5 +50,43 @@
 	</dependency>
 
 </dependencies>
+
+<build>
+		<!-- Source directory configuration -->
+	<!--	<sourceDirectory>src</sourceDirectory> -->
+		<plugins>
+			<!-- Following plugin executes the testng tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.14.1</version>
+				<configuration>
+					<!-- Suite testng xml file to consider for test execution 
+					to run via the testNg xml and not directly through the pom.xml, uncomment the below lines
+					and remove the runner.java lines. In testNG include the runner class under tests/classes-->
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles> 
+					<!-- this is to run the runner file directly from pom.xml without going to testNG.xml
+					<testFailureIgnore>true</testFailureIgnore>
+					<includes>
+						<include>**/RunnerFile.java</include>
+					</includes>   -->
+				</configuration>
+			</plugin>
+			<!-- Compiler plugin configures the java version to be usedfor compiling
+				the code -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
