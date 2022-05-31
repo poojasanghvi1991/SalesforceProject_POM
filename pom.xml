@@ -4,11 +4,12 @@
   <artifactId>AutomateSalesforceWebApp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+<!--
 <properties>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<maven.compiler.source>11</maven.compiler.source>
 	<maven.compiler.target>11</maven.compiler.target>
-</properties>
+</properties> -->
 
 <dependencies>
 
@@ -32,7 +33,7 @@
     	<groupId>org.testng</groupId>
     	<artifactId>testng</artifactId>
     	<version>7.5</version>
-    	<scope>compile</scope>
+    	<scope>test</scope>
 	</dependency>
 
 	<!-- https://mvnrepository.com/artifact/log4j/log4j -->
@@ -59,14 +60,15 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.14.1</version>
+				<version>2.19.1</version>
 				<configuration>
 					<!-- Suite testng xml file to consider for test execution 
 					to run via the testNg xml and not directly through the pom.xml, uncomment the below lines
 					and remove the runner.java lines. In testNG include the runner class under tests/classes-->
-					<suiteXmlFiles>
+<!--					<suiteXmlFiles>
 						<suiteXmlFile>testLoginPage.xml</suiteXmlFile>
 					</suiteXmlFiles> 
+-->
 					<!-- this is to run the runner file directly from pom.xml without going to testNG.xml
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
