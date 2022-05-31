@@ -33,7 +33,7 @@
     	<groupId>org.testng</groupId>
     	<artifactId>testng</artifactId>
     	<version>7.5</version>
-    	<scope>test</scope>
+    	<scope>compile</scope>
 	</dependency>
 
 	<!-- https://mvnrepository.com/artifact/log4j/log4j -->
@@ -65,10 +65,10 @@
 					<!-- Suite testng xml file to consider for test execution 
 					to run via the testNg xml and not directly through the pom.xml, uncomment the below lines
 					and remove the runner.java lines. In testNG include the runner class under tests/classes-->
-<!--					<suiteXmlFiles>
+					<suiteXmlFiles>
 						<suiteXmlFile>testLoginPage.xml</suiteXmlFile>
 					</suiteXmlFiles> 
--->
+
 					<!-- this is to run the runner file directly from pom.xml without going to testNG.xml
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
