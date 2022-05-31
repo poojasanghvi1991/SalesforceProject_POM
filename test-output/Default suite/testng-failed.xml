@@ -5,8 +5,8 @@
     <classes>
       <class name="com.salesforce.tests.login.LoginTestScripts">
         <methods>
-          <include name="TC05_validateUserMenuDropdown"/>
           <include name="finalTearDown"/>
+          <include name="TC01_testnoPasswordError"/>
           <include name="initialTestSetup"/>
           <include name="setUp"/>
           <include name="tearDown"/>

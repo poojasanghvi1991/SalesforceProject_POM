@@ -23,6 +23,8 @@ public class LoginTestScripts extends BaseTest {
 	@Test (priority=0, enabled=true)
 	public static void TC01_testnoPasswordError() throws IOException {
 		
+		String methodName = new Object() {} .getClass().getEnclosingMethod().getName();
+		
 		String expectedError = "Please enter your password.";
 		objLogin = new LoginPage(driver);
 		String username = CommonUtilities.getPropertyValue("username");
@@ -30,9 +32,13 @@ public class LoginTestScripts extends BaseTest {
 		objLogin.clearPasswordField();
 		objLogin.clickLoginButton();
 		String actualError = objLogin.getNoPwdError();
-		Assert.assertTrue(actualError.equalsIgnoreCase(expectedError), "Expected error message is NOT displayed");
+		try {
+			Assert.assertTrue(actualError.equalsIgnoreCase(expectedError), "Expected error message is NOT displayed");
+		}
+		catch(Error e) {
+			report.logTestFailedWithException(methodName, e);
+		}
 		
-		String methodName = new Object() {} .getClass().getEnclosingMethod().getName();
 		captureScreenShot(methodName);
 	}
 
@@ -145,7 +151,7 @@ public class LoginTestScripts extends BaseTest {
 		try {
 		Assert.assertTrue(actualError.equalsIgnoreCase(expectedError), "Expected login error message is not displayed");
 		}
-		catch(Exception e) {
+		catch(Error e) {
 			report.logTestFailedWithException(methodName, e);
 		}
 		captureScreenShot(methodName);
@@ -154,6 +160,7 @@ public class LoginTestScripts extends BaseTest {
 	@Test(priority=5, enabled=true)
 	public static void TC05_validateUserMenuDropdown() throws IOException, InterruptedException {
 		
+		String methodName = new Object() {} .getClass().getEnclosingMethod().getName();
 		soft = new SoftAssert();
 		objLogin = new LoginPage(driver);
 		objHome = new HomePage(driver);
@@ -172,7 +179,12 @@ public class LoginTestScripts extends BaseTest {
 		String expectedUserName = "Pooja Sanghvi";
 		String userFullName = objHome.getHomePageDashboardUserName();
 		System.out.println("Username appearing on the SFDC Home dashboard: " +userFullName);
+		try {
 		soft.assertEquals(userFullName, expectedUserName, "User's fullname on the dashboard does NOT match with the expected name");
+		}
+		catch(Error e) {
+			report.logTestFailedWithException(methodName, e);
+		}
 		
 		objHome.clickUserMenuDropdown();
 		String [] userMenuArray = {"My Profile", "My Settings", "Developer Console", "Switch to Lightning Experience", "Logout"};
@@ -184,7 +196,6 @@ public class LoginTestScripts extends BaseTest {
 		soft.assertTrue(actualUserMenuList.containsAll(expectedUserMenuList), "User Menu dropdown list does NOT contain the expected options");
 		soft.assertAll();
 		
-		String methodName = new Object() {} .getClass().getEnclosingMethod().getName();
 		captureScreenShot(methodName);
 	}
 }

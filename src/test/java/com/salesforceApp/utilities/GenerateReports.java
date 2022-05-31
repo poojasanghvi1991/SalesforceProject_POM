@@ -71,7 +71,7 @@ public class GenerateReports {
 		logger.log(Status.SKIP,  MarkupHelper.createLabel(testcaseName + " has skipped the test", ExtentColor.YELLOW));
 	}
 	
-	public void logTestFailedWithException(String testcaseName, Exception e) {
+	public void logTestFailedWithException(String testcaseName, Error e) {
 		logger.log(Status.ERROR, e);
 	}
 	
